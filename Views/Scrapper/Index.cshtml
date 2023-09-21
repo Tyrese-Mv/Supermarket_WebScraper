@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Web Scraping Example";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+@foreach (var extractedText in ViewBag.ExtractedText)
+{
+   <text>
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">stove</h5>
+                <p class="card-text">@extractedText</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+   </text>
+    
+}
